@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:weightSum="100"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_weight="33.3"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_repository"
+            android:textColor="@color/almostWhite"
+            android:textSize="24sp"
+            tools:text = "50"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_repository_text"
+            android:textColor="@color/almostWhite"
+            android:textSize="14sp"
+            android:text="@string/repository"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_weight="33.3"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_followers"
+            android:textColor="@color/almostWhite"
+            android:textSize="24sp"
+            tools:text = "50"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_follower_text"
+            android:textColor="@color/almostWhite"
+            android:textSize="14sp"
+            android:text="@string/repository"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_weight="33.3"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_following"
+            android:textColor="@color/almostWhite"
+            android:textSize="24sp"
+            tools:text = "50"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_following_text"
+            android:textColor="@color/almostWhite"
+            android:textSize="14sp"
+            android:text="@string/repository"/>
+
+    </LinearLayout>
+
+</LinearLayout>
